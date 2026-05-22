@@ -73,7 +73,7 @@ st.markdown("""
     <!-- 🎁 কলাম ৩: গিফট কার্ড -->
     <div class="product-card" style="flex: 1;">
         <span class="badge-gift">🎁  Gift Card</span>
-        <h3>Amazon eGift Card</h3>
+        <h3>Amazon Gift Card</h3>
         <p>Official Amazon digital gift cards. Perfect for shopping online, gifting to loved ones, or funding your personal account balance instantly.</p>
         <a href="YOUR_GIFTCARD_AFFILIATE_LINK" target="_blank" class="buy-btn">🛒 Purchase Gift Card</a>
     </div>
