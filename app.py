@@ -1,111 +1,101 @@
 import streamlit as st
 
-st.set_page_config(page_title="Welcome | AI Masterclass Hub", page_icon="🚀", layout="wide")
-
+st.set_page_config(page_title="Premium Digital Hub 2026", page_icon="💎", layout="wide")
 st.markdown("""
     <style>
-    body {
-        background-color: #071B33;
-    }
-    .page-header {
-        padding: 40px 20px 10px;
-        text-align: center;
-        color: #FFFFFF;
-    }
-    .main-title {
-        font-size: 48px;
-        font-weight: 800;
-        margin-bottom: 12px;
-        letter-spacing: -0.02em;
-    }
-    .sub-title {
-        font-size: 20px;
-        color: #B8C7E0;
-        margin-bottom: 32px;
-        max-width: 820px;
-        margin-left: auto;
-        margin-right: auto;
-        line-height: 1.6;
-    }
-    .book-card {
-        background: linear-gradient(170deg, rgba(6,18,40,0.95), rgba(5,15,30,0.85));
-        padding: 28px;
-        border-radius: 18px;
-        border: 1px solid rgba(0, 240, 255, 0.18);
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.30);
-        margin-bottom: 24px;
-        text-align: center;
-    }
-    .book-card h3 {
-        color: #FFFFFF;
-    }
-    .book-card p {
-        color: #D0D8F4;
-    }
-    .buy-btn {
-        display: inline-block;
-        background-color: #5E4BFF;
-        color: white;
-        padding: 14px 26px;
-        font-weight: 700;
-        border-radius: 999px;
-        text-decoration: none;
-        margin-top: 18px;
-        transition: transform 0.2s ease, background-color 0.2s ease;
-    }
-    .buy-btn:hover {
-        background-color: #7D63FF;
-        transform: translateY(-2px);
-    }
-    .feature-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 18px;
-        margin-top: 30px;
-    }
-    .feature-pill {
-        background-color: rgba(255, 255, 255, 0.08);
-        color: #E4EEFF;
-        padding: 12px 18px;
-        border-radius: 999px;
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        font-size: 14px;
-    }
-    .footer-note {
-        color: #A3B1D2;
-        text-align: center;
-        margin-top: 36px;
-    }
-    </style>
+    .stApp { background-color: #0B0C10 !important; }
+    
+    /* Welcome Page / Hero Banner Style */
+    .welcome-container { background: linear-gradient(135deg, #1F2833 0%, #0B0C10 100%); padding: 50px 20px; border-radius: 20px; border: 1px solid #D4AF37; text-align: center; margin-bottom: 50px; box-shadow: 0 15px 30px rgba(0,0,0,0.7); }
+    .main-title { font-size: 48px; font-weight: 900; color: #D4AF37; margin-bottom: 15px; font-family: 'Helvetica Neue', sans-serif; letter-spacing: 1px; }
+    .welcome-desc { font-size: 19px; color: #E2E8F0; max-width: 800px; margin: 0 auto; line-height: 1.7; font-weight: 400; }
+    .product-card { background-color: #1F2833; padding: 30px; border-radius: 15px; border: 2px solid #333; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.5); margin-bottom: 25px; transition: 0.3s; position: relative; }
+    .product-card:hover { border-color: #D4AF37; transform: translateY(-5px); }
+    
+    .badge-book { background-color: #A020F0; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; display: inline-block; margin-bottom: 15px; }
+    .badge-soft { background-color: #00F0FF; color: black; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; display: inline-block; margin-bottom: 15px; }
+    .badge-gift { background-color: #FF007F; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; display: inline-block; margin-bottom: 15px; }
+    
+    .buy-btn { display: inline-block; background-color: #D4AF37; color: #000000; padding: 12px 28px; text-align: center; font-weight: bold; border-radius: 6px; text-decoration: none; margin-top: 20px; font-size: 15px; width: 100%; transition: 0.3s; }
+    .buy-btn:hover { background-color: #FFDF00; }
+    
+    h3 { color: #FFFFFF !important; font-size: 22px !important; margin-top: 5px !important; }
+    p { color: #C5C6C7 !important; font-size: 14px; line-height: 1.6; }
+    .footer-bar { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #333; border-bottom: 1px solid #333; padding: 15px 10px; margin-top: 50px; }
+    .footer-social a { color: #C5C6C7; margin-right: 15px; font-size: 18px; text-decoration: none; }
+    .footer-social a:hover { color: #D4AF37; }
+    .footer-links a { color: #4F46E5; margin-left: 20px; font-size: 14px; text-decoration: none; font-weight: 500; }
+    .footer-links a:hover { text-decoration: underline; color: #6366F1; }
+    .copyright-section { text-align: center; color: #C5C6C7; font-size: 14px; margin-top: 20px; font-family: sans-serif; line-height: 1.5; }
+    </style><link rel="stylesheet" href="https://cloudflare.com">
 """, unsafe_allow_html=True)
 
-st.markdown('<div class="page-header">', unsafe_allow_html=True)
-st.markdown('<div class="main-title">Welcome to the AI Masterclass Hub</div>', unsafe_allow_html=True)
-st.markdown('<div class="sub-title">Discover easy-to-follow AI guides designed to help beginners, seniors, and professionals build confidence with ChatGPT, Claude, Gemini, and the latest AI tools for work, life, and business.</div>', unsafe_allow_html=True)
-
-st.markdown('<div class="feature-list">', unsafe_allow_html=True)
-st.markdown('<span class="feature-pill">No coding experience needed</span>', unsafe_allow_html=True)
-st.markdown('<span class="feature-pill">Practical automation workflows</span>', unsafe_allow_html=True)
-st.markdown('<span class="feature-pill">Step-by-step learning</span>', unsafe_allow_html=True)
-st.markdown('<span class="feature-pill">Current for 2026 AI tools</span>', unsafe_allow_html=True)
-st.markdown('</div>', unsafe_allow_html=True)
-st.markdown('</div>', unsafe_allow_html=True)
-
-col1, col2 = st.columns(2)
+# 🌐 Welcome Page Banner
+st.markdown("""
+    <div class="welcome-container">
+        <div class="main-title">💎 Welcome to Premium Digital Hub</div>
+        <div class="welcome-desc">
+            Explore our handpicked collection of world-class digital essentials. Whether you want to master Artificial Intelligence with our top-rated beginner guides, upgrade your computer using 100% genuine Microsoft Software, or send official Gift Cards to your loved ones—we provide secure links and instant digital delivery for everything you need.
+        </div>
+    </div>
+""", unsafe_allow_html=True)
+col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.markdown('<div class="book-card">', unsafe_allow_html=True)
-    st.subheader("🤖 ChatGPT & AI for Seniors")
-    st.write("A warm, friendly introduction to AI for seniors and beginners. Learn how to use ChatGPT, Claude, and Gemini to stay connected, productive, and confident.")
-    st.markdown('<a href="YOUR_SENIOR_BOOK_AFFILIATE_LINK" target="_blank" class="buy-btn">Explore this Guide</a>', unsafe_allow_html=True)
+    st.markdown('<div class="product-card">', unsafe_allow_html=True)
+    st.markdown('<span class="badge-book">📚 BEST SELLING BOOK</span>', unsafe_allow_html=True)
+    st.subheader("AI For Beginners Guide")
+    st.write("Learn AI in 3 Days without any coding. Perfect hands-on guide to boost your daily work, home automation, and online business productivity safely.")
+    st.markdown('<a href="YOUR_BOOK_AFFILIATE_LINK" target="_blank" class="buy-btn">🛒 Get It on Amazon</a>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col2:
-    st.markdown('<div class="book-card">', unsafe_allow_html=True)
-    st.subheader("🚀 AI for Beginners Guide 2026")
-    st.write("A practical roadmap to mastering AI without technical barriers. Learn real-world prompts, tools, and workflows for home, career, and small business.")
-    st.markdown('<a href="YOUR_BEGINNER_BOOK_AFFILIATE_LINK" target="_blank" class="buy-btn">Start Learning Today</a>', unsafe_allow_html=True)
+    st.markdown('<div class="product-card">', unsafe_allow_html=True)
+    st.markdown('<span class="badge-soft">💾 GENUINE SOFTWARE</span>', unsafe_allow_html=True)
+    st.subheader("Microsoft Office 2021")
+    st.write("100% Genuine Pro Plus Lifetime Activation Key. Upgrade your personal computer or business laptop securely with instant digital delivery.")
+    st.markdown('<a href="YOUR_SOFTWARE_AFFILIATE_LINK" target="_blank" class="buy-btn">🛒 Get Genuine License</a>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
-st.markdown("<div class='footer-note'>© 2026 AI Masterclass Hub | Affiliate Disclosure: As an Amazon Associate I earn from qualifying purchases.</div>", unsafe_allow_html=True)
+with col3:
+    st.markdown('<div class="product-card">', unsafe_allow_html=True)
+    st.markdown('<span class="badge-gift">🎁 OFFICIAL GIFT CARD</span>', unsafe_allow_html=True)
+    st.subheader("Amazon eGift Card")
+    st.write("Official Amazon digital gift cards. Perfect for shopping online, gifting to loved ones, or funding your personal account balance instantly.")
+    st.markdown('<a href="YOUR_GIFTCARD_AFFILIATE_LINK" target="_blank" class="buy-btn">🛒 Purchase Gift Card</a>', unsafe_allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
+    col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.markdown('<div class="product-card">', unsafe_allow_html=True)
+    st.markdown('<span class="badge-book">📚 BEST SELLING BOOK</span>', unsafe_allow_html=True)
+    st.subheader("AI For Beginners Guide")
+    st.write("Learn AI in 3 Days without any coding. Perfect hands-on guide to boost your daily work, home automation, and online business productivity safely.")
+    st.markdown('<a href="YOUR_BOOK_AFFILIATE_LINK" target="_blank" class="buy-btn">🛒 Get It on Amazon</a>', unsafe_allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
+
+with col2:
+    st.markdown('<div class="product-card">', unsafe_allow_html=True)
+    st.markdown('<span class="badge-soft">💾 GENUINE SOFTWARE</span>', unsafe_allow_html=True)
+    st.subheader("Microsoft Office 2021")
+    st.write("100% Genuine Pro Plus Lifetime Activation Key. Upgrade your personal computer or business laptop securely with instant digital delivery.")
+    st.markdown('<a href="YOUR_SOFTWARE_AFFILIATE_LINK" target="_blank" class="buy-btn">🛒 Get Genuine License</a>', unsafe_allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
+
+with col3:
+    st.markdown('<div class="product-card">', unsafe_allow_html=True)
+    st.markdown('<span class="badge-gift">🎁 OFFICIAL GIFT CARD</span>', unsafe_allow_html=True)
+    st.subheader("Amazon eGift Card")
+    st.write("Official Amazon digital gift cards. Perfect for shopping online, gifting to loved ones, or funding your personal account balance instantly.")
+    st.markdown('<a href="YOUR_GIFTCARD_AFFILIATE_LINK" target="_blank" class="buy-btn">🛒 Purchase Gift Card</a>', unsafe_allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
+     <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Affiliate Disclosure</a>
+            <a href="#">Terms & Disclaimer</a>
+        </div>
+    </div>
+      <div class="copyright-section">
+        © 2026 Search AI Finder | All Rights Reserved
+    </div>
+""", unsafe_allow_html=True)
