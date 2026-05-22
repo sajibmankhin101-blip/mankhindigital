@@ -80,6 +80,6 @@ st.markdown("""
             <a href="#">Terms & Disclaimer</a>
         </div>
     </div> <div class="copyright-section">
-        © 2026 Search AI Finder | All Rights Reserved
+        © 2026 Mankhin Digital | All Rights Reserved
     </div>
 """, unsafe_allow_html=True)
