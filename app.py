@@ -54,13 +54,13 @@ st.markdown("""
     <!-- 💾 কলাম ২: সফটওয়্যার -->
     <div class="product-card" style="flex: 1;">
         <span class="badge-soft">💾 Genuine Software</span>
-        <h3>Microsoft Office 2021</h3>
+        <h3>Microsoft Office 2026</h3>
         <p>100% Genuine Pro Plus Lifetime Activation Key. Upgrade your personal computer or business laptop securely with instant digital delivery.</p>
         <a href="YOUR_SOFTWARE_AFFILIATE_LINK" target="_blank" class="buy-btn">🛒 Get Genuine License</a>
     </div>
     <!-- 🎁 কলাম ৩: গিফট কার্ড -->
     <div class="product-card" style="flex: 1;">
-        <span class="badge-gift">🎁 Official Gift Card</span>
+        <span class="badge-gift">🎁 Gift Card</span>
         <h3>Amazon eGift Card</h3>
         <p>Official Amazon digital gift cards. Perfect for shopping online, gifting to loved ones, or funding your personal account balance instantly.</p>
         <a href="YOUR_GIFTCARD_AFFILIATE_LINK" target="_blank" class="buy-btn">🛒 Purchase Gift Card</a>
