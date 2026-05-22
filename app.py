@@ -38,7 +38,8 @@ st.markdown(f"""
             Explore our handpicked collection of world-class digital essentials. Whether you want to master Artificial Intelligence with our top-rated beginner guides, upgrade your computer using 100% genuine Microsoft Software, or send official Gift Cards to your loved ones—we provide secure links and instant digital delivery for everything you need.
         </div>
     </div>
-""", unsafe_allow_html=True)col1, col2, col3 = st.columns(3)
+""", unsafe_allow_html=True)
+col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown("""
         <div class="product-card">
