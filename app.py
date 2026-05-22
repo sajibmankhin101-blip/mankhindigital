@@ -48,7 +48,8 @@ with col1:
             <p>Learn AI in 3 Days without any coding. Perfect hands-on guide to boost your daily work, home automation, and online business productivity safely.</p>
             <a href="YOUR_BOOK_AFFILIATE_LINK" target="_blank" class="buy-btn">🛒 Get It on Amazon</a>
         </div>
-    """, unsafe_allow_html=True)with col2:
+    """, unsafe_allow_html=True)
+    with col2:
     st.markdown("""
         <div class="product-card">
             <span class="badge-soft">💾 Genuine Software</span>
