@@ -34,7 +34,7 @@ st.markdown("""
 # 🌐 Welcome Page Banner
 st.markdown("""
     <div class="welcome-container">
-        <div class="main-title">💎 Welcome to Premium Digital Hub</div>
+        <div class="main-title">💎 Welcome to Mankhin Digital Hub</div>
         <div class="welcome-desc">
             Explore our handpicked collection of world-class digital essentials. Whether you want to master Artificial Intelligence with our top-rated beginner guides, upgrade your computer using 100% genuine Microsoft Software, or send official Gift Cards to your loved ones—we provide secure links and instant digital delivery for everything you need.
         </div>
@@ -60,7 +60,7 @@ with col2:
 
 with col3:
     st.markdown('<div class="product-card">', unsafe_allow_html=True)
-    st.markdown('<span class="badge-gift">🎁 OFFICIAL GIFT CARD</span>', unsafe_allow_html=True)
+    st.markdown('<span class="badge-gift">🎁  GIFT CARD</span>', unsafe_allow_html=True)
     st.subheader("Amazon eGift Card")
     st.write("Official Amazon digital gift cards. Perfect for shopping online, gifting to loved ones, or funding your personal account balance instantly.")
     st.markdown('<a href="YOUR_GIFTCARD_AFFILIATE_LINK" target="_blank" class="buy-btn">🛒 Purchase Gift Card</a>', unsafe_allow_html=True)
